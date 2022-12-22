@@ -1,0 +1,127 @@
+
+### internationalized contents
+GET http://localhost:8080/hello-world-internationalized
+Accept-Language: fr
+
+### internationalized contents alt
+GET http://localhost:8080/hello-world-internationalized-alt
+Accept-Language: us
+
+
+###
+GET http://localhost:8080/users
+accept: */*
+
+###
+GET http://localhost:8080/users/
+accept: application/xml
+
+### with basic auth (use postman to encode spring generated security password, or password in application.properties )
+GET http://localhost:8080/users/
+Authorization: Basic dXNlcm5hbWU6YmxhYmxhcGFzc3dvcmQ=
+
+Authorization: Basic dXNlcjo2ZTljMTE4Mi1jZjUwLTRlY2EtYWRjNS1hYmRhMTFlYTFhMjI=
+
+
+###
+GET http://localhost:8080/users/3
+accept: */*
+
+
+###  get non-existing user
+GET http://localhost:8080/users/100
+accept: */*
+
+
+### creating new user
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "Slava",
+  "birthDate": "1974-01-22T20:00:36.795+0000"
+}
+
+### creating new user with xml
+
+POST http://localhost:8080/users
+Accept: application/xml
+Content-Type: application/xml
+
+<item>
+   <name>Alfonso</name>
+   <birthDate>2000-01-19T21:00:10.538+0000</birthDate>
+</item>
+
+### creating user with bad validation
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "R",
+  "birtDate": "2074-01-22T20:00:36.795+0000"
+}
+
+
+###
+
+DELETE http://localhost:8080/users/4
+accept: */*
+
+
+#### filtering 1
+
+GET http://localhost:8080/filtering
+accept: */*
+
+
+#### filtering 2
+
+GET http://localhost:8080/filtering-list
+accept: */*
+
+
+###  versionning
+
+GET http://localhost:8080/v1/person
+accept: */*
+
+###
+
+GET http://localhost:8080/v2/person
+accept: */*
+
+### with header
+
+GET http://localhost:8080/person/header
+accept: */*
+X-API-VERSION:1
+
+
+### with header mime type
+
+GET http://localhost:8080/person/produces
+accept: application/vnd.company.app-v2+json
+
+### with param (better for caching)
+GET   http://localhost:8080//person/param?version=1
+accept: */*
+
+###
+GET   http://localhost:8080//person/param?version=2
+accept: */*
+
+
+### swagger
+
+GET http://localhost:8080/v2/api-docs
+accept: */*
+
+
+### actuator
+GET http://localhost:8080/actuator
+accept: */*
+
+###
+GET http://localhost:8080/actuator/health
+accept: */*

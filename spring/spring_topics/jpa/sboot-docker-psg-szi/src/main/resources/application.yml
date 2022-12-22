@@ -1,0 +1,28 @@
+
+
+spring.datasource:
+  url: jdbc:postgresql://localhost:5432/compose-postgres
+  username: compose-postgres
+  password: compose-postgres
+
+spring.jpa.hibernate.ddl-auto: update #set this to none in prod env
+
+#jdbc connection pool
+spring.datasource.hikari.initializationFailTimeout: 60000
+
+
+logging:
+  level:
+    root: INFO
+    com.baeldung: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+---
+spring.profiles: docker
+
+spring.datasource:
+  url: jdbc:postgresql://db:5432/compose-postgres
+  username: compose-postgres
+  password: compose-postgres
+

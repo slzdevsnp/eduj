@@ -1,0 +1,16 @@
+
+
+apply plugin: 'java'
+
+
+sourceCompatibility = 1.7
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation  'junit:junit:4.11'
+    testImplementation 'org.hamcrest:hamcrest-all:1.3'
+}

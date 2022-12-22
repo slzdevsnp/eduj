@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Country">
+        <xs:complexType>
+        	<xs:sequence>
+                <xs:element name="Country_Name" type="xs:string" />
+                <xs:element name="Country_Capital" type="xs:string" />
+                <xs:element name="Country_Foundation_Date" type="xs:string" />
+                <xs:element name="Country_Continent" type="xs:string" />
+                 <xs:element name="Country_Population" type="xs:integer" />
+        	</xs:sequence>
+        </xs:complexType>
+    </xs:element>
+ </xs:schema>

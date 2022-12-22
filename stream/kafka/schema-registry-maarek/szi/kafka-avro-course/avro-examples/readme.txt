@@ -1,0 +1,1 @@
+do run mvn clean package  to generate  avro dto classes in target/generated-sources

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Countries>
+    <Country>
+        <Country_Name>Spain</Country_Name>
+        <Country_Capital>Madrid</Country_Capital>
+        <Country_Foundation_Date>1469-10-19</Country_Foundation_Date>
+        <Country_Continent>Europe</Country_Continent>
+        <Country_Population>0</Country_Population>
+    </Country>
+    <Country>
+        <Country_Name>USA</Country_Name>
+        <Country_Capital>Washington</Country_Capital>
+        <Country_Foundation_Date>1776-07-04</Country_Foundation_Date>
+        <Country_Continent>America</Country_Continent>
+        <Country_Population>0</Country_Population>
+    </Country>
+</Countries>

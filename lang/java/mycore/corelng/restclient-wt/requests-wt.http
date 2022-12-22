@@ -1,0 +1,16 @@
+
+###obtain auth token
+# curl -X POST "https://auth.wattsight.com/oauth2/token"  -H "Content-Type: application/x-www-form-urlencoded"  -H "Authorization: Basic clhzWHlHTjBZX3RGU2hMMmhSR0Z4MXRXLnIzX1d4THU6NzlKMnRoN2l4TFhGU2M5bXpaLThSZmVNSl9Rb2ltampwMVF3QUNTcnJuZzN1SjJtTzNHbGZHTV9UVmo0bmJhbHp2Q29WWUxfRjM3VE54cXJHNm9ySmZjM1RPTnVjLUxYWUdsZg=="  -d "grant_type=client_credentials"
+POST https://auth.wattsight.com/oauth2/token
+Authorization: Basic clhzWHlHTjBZX3RGU2hMMmhSR0Z4MXRXLnIzX1d4THU6NzlKMnRoN2l4TFhGU2M5bXpaLThSZmVNSl9Rb2ltampwMVF3QUNTcnJuZzN1SjJtTzNHbGZHTV9UVmo0bmJhbHp2Q29WWUxfRjM3VE54cXJHNm9ySmZjM1RPTnVjLUxYWUdsZg==
+Content-Type: application/x-www-form-urlencoded
+
+grant_type=client_credentials
+
+
+### get areas
+GET https://api.wattsight.com/api/areas
+accept: application/json
+authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjY2OjMxOmZiOjRiOjc2OjkxOjQ0OjY4OjUwOmYyOmUyOjNlOjdhOmZiOjBmOjIyIn0.eyJ1aWQiOjg2OTEsImNpZCI6MTA2OSwiaWF0IjoxNjAwNjA0MTg3LCJleHAiOjE2MDA2MDc3ODd9.GMcpm3UTHpa0qc8FkiV1ttfjR94OcIYZTi0IwIipPQKgB7KZa33Ex4zZhwUXUtBfLwwKsrZXYhTQfK33FmxAjVQmg91fn-tHB8MbsNV7nRPyd7P7z37JY-Rs8ZzzCYp__Ruo2aKxfK6bLk2tNM4BIPOmHGNbU_f1HMXTI3szBYBOVNHYhMASbf-AIDAl27FEIi6rMSnBwGMaH7J0zWgL_RNsA2ZF-jPJ3qloG-QwnoCr6tx6p_uwPrDpQWEqQwdw0Cy7ZYnKPPA5c71crhW9Wi5Ujui59nDemDtfUj8CYuccQYp0s-IulHERg3iGNvplcSx9EzKPkbcqis9Cxrw-Bw
+
+

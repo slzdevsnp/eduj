@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Countries>
+    <Country>
+        <Country_Name>Spain</Country_Name>
+        <Country_Capital>Madrid</Country_Capital>
+        <Country_Continent>Europe</Country_Continent>
+    </Country>
+    <Country>
+        <Country_Name>USA</Country_Name>
+        <Country_Capital>Washington</Country_Capital>
+        <Country_Continent>America</Country_Continent>
+    </Country>
+        <Country>
+        <Country_Name>Japan</Country_Name>
+        <Country_Capital>Tokyo</Country_Capital>
+        <Country_Continent>Asia</Country_Continent>
+    </Country>
+</Countries>

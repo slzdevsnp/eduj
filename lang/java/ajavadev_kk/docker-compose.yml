@@ -1,0 +1,21 @@
+version: '3.3'
+services:
+  db:
+    # check supported image versions on https://hub.docker.com/_/mysql
+    image: mysql:8.0.19
+    container_name: mysqlsrv
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'hr'
+      MYSQL_USER: 'jpa'
+      MYSQL_PASSWORD: 'java'
+      MYSQL_ROOT_PASSWORD: 'mysqldba'
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+      # Where our data will be persisted
+    volumes:
+      - /Users/zimine/sdata/docker-shared/tst:/opt/mounted
+

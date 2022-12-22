@@ -1,0 +1,11 @@
+org/slzdevsnp/lomb/model/LoginResultDTO.class
+org/slzdevsnp/lomb/inheritance/Parent.class
+org/slzdevsnp/lomb/model/User.class
+org/slzdevsnp/lomb/composition/HasContactInformation.class
+org/slzdevsnp/lomb/model/AppConfigBuilderPattern$AppConfigBuilderPatternBuilder.class
+org/slzdevsnp/lomb/inheritance/Child$ChildBuilder.class
+org/slzdevsnp/lomb/composition/Customer.class
+org/slzdevsnp/lomb/composition/ContactInformationSupportAdapter.class
+org/slzdevsnp/lomb/model/LoggerAnnotated.class
+org/slzdevsnp/lomb/model/AppConfigBuilderPattern.class
+org/slzdevsnp/lomb/inheritance/Child.class

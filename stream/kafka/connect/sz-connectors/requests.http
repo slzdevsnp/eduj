@@ -1,0 +1,59 @@
+### Gets all connectors setup in connect
+GET http://localhost:8083/connectors?expand=info&expand=status
+Content-Type: application/json
+
+### Gets all connector-plugins setup in connect
+GET http://localhost:8083/connector-plugins
+Content-Type: application/json
+
+###
+# GitHubSourceConnector
+###
+
+DELETE  http://localhost:8083/connectors/github-issues-connector
+
+### Register a new github-issues Connector with Kafka Connect
+POST http://localhost:8083/connectors
+Content-Type: application/json
+
+{
+  "name": "github-issues-connector",
+  "config": {
+    "connector.class": "org.szi.kafka.GitHubSourceConnector",
+    "tasks.max": "1",
+    "topic": "github-issues",
+    "github.owner": "kubernetes",
+    "github.repo":"kubernetes",
+    "since.timestamp":"2019-01-01T00:00:00Z",
+    "batch.size" : 100
+  }
+}
+
+### Status
+
+GET http://localhost:8083/connectors/github-issues-connector/status
+Content-Type: application/json
+
+### Pause the connector
+PUT http://localhost:8083/connectors/github-issues-connector/pause
+Content-Type: application/json
+
+### Resume the Connector
+PUT http://localhost:8083/connectors/github-issues-connector/resume
+Content-Type: application/json
+
+
+#######################################################################
+##########  api requests from connector's data source endpoint ########
+######  https://api.github.com
+#######################################################################
+
+
+### get list of open issues  (json of issue entries)
+GET https://api.github.com/repos/kubernetes/kubernetes/issues
+Accept: application/vnd.github.v3+json
+
+
+### closed issues since a specific date, paginated, 2 entries per page
+GET https://api.github.com/repos/kubernetes/kubernetes/issues?state=closed&page=0&per_page=2&direction=asc&sort=updated&since=2017-01-01T00:00:00Z
+Accept: application/vnd.github.v3+json

@@ -1,0 +1,40 @@
+
+####
+GET http://localhost:8080/employees
+
+
+####
+GET http://localhost:8080/employees/1
+
+
+###
+GET http://localhost:8080/employees/99
+
+
+###
+POST localhost:8080/employees
+Content-type:application/json
+
+{"name": "Samwise Gamgee", "role": "gardener"}
+
+
+###
+PUT localhost:8080/employees/3
+Content-type:application/json
+
+{"name": "Samwise Gamgee", "role": "ring bearer"}
+
+###
+DELETE localhost:8080/employees/3
+
+
+###
+GET http://localhost:8080/orders
+
+
+###
+# curl -v -X DELETE http://localhost:8080/orders/4/cancel
+DELETE http://localhost:8080/orders/4/cancel
+
+###
+

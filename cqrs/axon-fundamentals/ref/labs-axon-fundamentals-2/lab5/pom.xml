@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>giftcard-admin-lab5</artifactId>
+    <packaging>jar</packaging>
+
+    <name>Hotel Gift Card - lab 5</name>
+    <description>Lab baseline for module 5 - Snapshotting, Event Processors and Replays</description>
+
+    <parent>
+        <groupId>io.axoniq.training.labs.giftcard</groupId>
+        <artifactId>giftcard-admin</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.axonframework</groupId>
+            <artifactId>axon-spring-boot-starter</artifactId>
+            <version>${axon.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.axonframework</groupId>
+            <artifactId>axon-test</artifactId>
+            <version>${axon.version}</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

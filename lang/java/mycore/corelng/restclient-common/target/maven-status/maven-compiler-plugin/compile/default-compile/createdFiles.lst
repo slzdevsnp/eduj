@@ -1,0 +1,13 @@
+org/slzdevsnp/restclients/common/model/RestRequest$RestRequestBuilder.class
+org/slzdevsnp/restclients/common/model/ClientResponse.class
+org/slzdevsnp/restclients/common/model/Authentication$AuthenticationBuilder.class
+org/slzdevsnp/restclients/common/model/RestResponse$RestResponseBuilder.class
+org/slzdevsnp/restclients/common/model/RestResponse.class
+org/slzdevsnp/restclients/common/model/ClientListResponse.class
+org/slzdevsnp/restclients/common/utils/UriBuilder.class
+org/slzdevsnp/restclients/common/model/Authentication.class
+org/slzdevsnp/restclients/common/model/ClientSingleResponse.class
+org/slzdevsnp/restclients/common/model/RestRequest.class
+org/slzdevsnp/restclients/common/utils/RestUtils.class
+org/slzdevsnp/restclients/common/model/ClientNoBodyResponse.class
+org/slzdevsnp/restclients/common/utils/EnvironmentConfig.class

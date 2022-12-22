@@ -1,0 +1,10 @@
+/home/zimine/repos/clearn/java8/core/corelng/restclient-common/src/main/java/org/slzdevsnp/restclients/common/model/ClientSingleResponse.java
+/home/zimine/repos/clearn/java8/core/corelng/restclient-common/src/main/java/org/slzdevsnp/restclients/common/model/RestRequest.java
+/home/zimine/repos/clearn/java8/core/corelng/restclient-common/src/main/java/org/slzdevsnp/restclients/common/model/Authentication.java
+/home/zimine/repos/clearn/java8/core/corelng/restclient-common/src/main/java/org/slzdevsnp/restclients/common/model/ClientListResponse.java
+/home/zimine/repos/clearn/java8/core/corelng/restclient-common/src/main/java/org/slzdevsnp/restclients/common/model/ClientResponse.java
+/home/zimine/repos/clearn/java8/core/corelng/restclient-common/src/main/java/org/slzdevsnp/restclients/common/model/ClientNoBodyResponse.java
+/home/zimine/repos/clearn/java8/core/corelng/restclient-common/src/main/java/org/slzdevsnp/restclients/common/utils/RestUtils.java
+/home/zimine/repos/clearn/java8/core/corelng/restclient-common/src/main/java/org/slzdevsnp/restclients/common/utils/UriBuilder.java
+/home/zimine/repos/clearn/java8/core/corelng/restclient-common/src/main/java/org/slzdevsnp/restclients/common/model/RestResponse.java
+/home/zimine/repos/clearn/java8/core/corelng/restclient-common/src/main/java/org/slzdevsnp/restclients/common/utils/EnvironmentConfig.java

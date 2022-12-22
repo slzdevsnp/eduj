@@ -1,0 +1,13 @@
+FROM confluentinc/cp-kafka-connect-base:5.4.1
+
+COPY connector-github-issues/target/components/packages/szi-connector-github-issues-1.0-SNAPSHOT.zip /tmp/szi-connector-github-issues-1.0-SNAPSHOT.zip
+
+RUN confluent-hub install --no-prompt /tmp/szi-connector-github-issues-1.0-SNAPSHOT.zip
+
+COPY docker/entrypoint.sh /etc/confluent/docker/entrypoint.sh
+COPY docker/configure-connect.sh  /etc/confluent/docker/configure-connect.sh
+
+RUN chmod +x /etc/confluent/docker/entrypoint.sh
+RUN chmod +x /etc/confluent/docker/configure-connect.sh
+
+CMD ["/etc/confluent/docker/entrypoint.sh"]

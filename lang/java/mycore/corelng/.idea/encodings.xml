@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/DateTimes/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/DateTimes/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FuncProg/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/FuncProg/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Generics/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Generics/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Http/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Http/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Intellij/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Intellij/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Logging1xx/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Logging1xx/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Lombok/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Lombok/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Orika/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Orika/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Streaming/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Streaming/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Xml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Xml/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aws-sdk/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/aws-sdk/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ftp-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ftp-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/restclient-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/restclient-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/restclient-wt/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/restclient-wt/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+  </component>
+</project>

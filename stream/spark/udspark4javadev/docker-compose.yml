@@ -1,0 +1,45 @@
+version: '3'
+
+services:
+  lzookeeper:
+    image: confluentinc/cp-zookeeper:5.4.1
+    hostname: lzookeeper
+    container_name: lzookeeper
+    ports:
+      - "2181:2181"
+    environment:
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+
+  lbroker:
+    image: confluentinc/cp-kafka:5.4.1
+    hostname: lbroker
+    container_name: lbroker
+    depends_on:
+      - lzookeeper
+    ports:
+      - "29092:29092"
+      - "9092:9092"
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: 'lzookeeper:2181'
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://lbroker:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+      KAFKA_GROUP_INITIAL_REBALANCE_DELAY_MS: 0
+      KAFKA_DELETE_TOPIC_ENABLE: "true"
+
+
+  lkafdrop:
+    image: obsidiandynamics/kafdrop
+    hostname: lkafdrop
+    container_name: lkafdrop
+    depends_on:
+      - lzookeeper
+      - lbroker
+    restart: "no"
+    ports:
+      - "9000:9000"
+    environment:
+      KAFKA_BROKERCONNECT: "lbroker:29092"
+      JVM_OPTS: "-Xms16M -Xmx48M -Xss180K -XX:-TieredCompilation -XX:+UseStringDeduplication -noverify"

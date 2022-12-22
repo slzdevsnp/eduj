@@ -1,0 +1,30 @@
+
+#################################################
+#### requests for springboot app running locally
+
+###  simple 1 field in book obj
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "query {allBooks { title } }"
+}
+
+
+
+###  same query but with more fields
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "query {allBooks {title pages rating {star} author {firstName lastName } } }"
+}
+
+
+### a query with a parameter
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "query {findOne(id: 1) {title pages rating {star } author {firstName lastName } } }"
+}

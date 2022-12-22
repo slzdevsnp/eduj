@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Intellij" />
+        <module name="Streaming" />
+        <module name="ftp-client" />
+        <module name="DateTimes" />
+        <module name="FuncProg" />
+        <module name="Http" />
+        <module name="Lombok" />
+        <module name="Logging1xx" />
+        <module name="Orika" />
+        <module name="restclient-common" />
+        <module name="Xml" />
+        <module name="restclient-wt" />
+        <module name="aws-sdk" />
+        <module name="Generics" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

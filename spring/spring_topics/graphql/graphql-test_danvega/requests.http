@@ -1,0 +1,47 @@
+
+#### graphql requests
+
+###
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "query {findAll{id name size } }"
+}
+
+###  fetch  1 obj
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "query {findOne(id: 2) {id name size } }"
+}
+
+### mutation create
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "mutation{create(name: \"Huge Coffee\", size:VENTI ){id name size } }"
+}
+
+
+
+### mutation update
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "mutation{update(id:1 name: \"Coffee Russo\", size:SHORT){id name size } }"
+}
+
+
+### mutation delete
+POST http://localhost:8080/graphql
+Content-Type: application/json
+
+{
+  "query": "mutation{delete(id:2){id name size } }"
+}
+
+
