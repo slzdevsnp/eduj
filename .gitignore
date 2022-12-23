@@ -37,6 +37,13 @@ target/
 .idea/**/dictionaries
 .idea/**/shelf
 
+.idea/**/compiler.xml
+.idea/**/encodings.xml
+.idea/**/misc.xml
+.idea/**/vcs.xml
+
+
+
 # AWS User-specific
 .idea/**/aws.xml
 
