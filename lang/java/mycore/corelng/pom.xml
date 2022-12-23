@@ -280,7 +280,7 @@
         <guava-version>31.1-jre</guava-version>
         <lombok.version>1.18.8</lombok.version>
         <jakarta-json.version>1.1.6</jakarta-json.version>
-        <jackson.version>2.10.5</jackson.version>
+        <jackson.version>2.14.1</jackson.version>
         <awssdk.version>2.16.20</awssdk.version>
         <commons-lang3.version>3.7</commons-lang3.version>
         <org.slf4j.version>1.7.30</org.slf4j.version>
@@ -303,7 +303,7 @@
         <rest.assured-version>4.2.0</rest.assured-version>
         <!-- plugins -->
         <maven-surefire-plugin.version>2.22.1</maven-surefire-plugin.version>
-        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+        <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
 
 
     </properties>
