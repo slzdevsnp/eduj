@@ -24,6 +24,12 @@ hs_err_pid*
 
 ## intellij
 
+.classpath
+.project
+.settings/
+target/
+
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
