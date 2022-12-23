@@ -1,8 +1,0 @@
-{
-  "library": "My Personal Library",
-  "books": [
-    { "title":"Title 1", "author":"Jane Doe" },
-    { "title":"Title 2", "author":"John Doe" }
-  ],
-  "range": {"from": "left", "to": "right"}
-}
