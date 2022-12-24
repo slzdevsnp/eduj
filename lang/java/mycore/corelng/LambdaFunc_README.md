@@ -18,7 +18,7 @@ Lambda expressions should be short, ideally one line of code (exprssion vs narra
 ## article Functional Interfaces in Java 8
 * https://www.baeldung.com/java-8-functional-interfaces
 
-gitrepo : eugen tutorials/core-java-modules/core-java-lambdas  pkg com.baeldung ??
+gitrepo : eugen tutorials core-java-modules/core-java-lambdas  pkg com.baeldung ??
 
 see test class  `baeldung.funcinterface.FunctionalInterfacesUnitTest`
 
