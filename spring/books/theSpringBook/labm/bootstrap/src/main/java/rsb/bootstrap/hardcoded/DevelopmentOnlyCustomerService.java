@@ -7,13 +7,15 @@ import rsb.bootstrap.DataSourceUtils;
 
 import javax.sql.DataSource;
 
-public class DevelopmentOnlyCustomerService extends BaseCustomerService {
-    DevelopmentOnlyCustomerService() {
-        super(buildDataSource());
-    }
+class DevelopmentOnlyCustomerService extends BaseCustomerService {
 
-    private static DataSource buildDataSource() { // <1>
-        var dataSource = new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.H2).build();
-        return DataSourceUtils.initializeDdl(dataSource);
-    }
+	DevelopmentOnlyCustomerService() {
+		super(buildDataSource());
+	}
+
+	private static DataSource buildDataSource() { // <1>
+		var dataSource = new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.H2).build();
+		return DataSourceUtils.initializeDdl(dataSource);
+	}
+
 }

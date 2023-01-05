@@ -10,18 +10,16 @@ import javax.sql.DataSource;
 
 public class DataSourceCustomerServiceTest extends BaseClass {
 
-    private final DataSourceCustomerService customerService;
+	private final DataSourceCustomerService customerService;
 
-    public DataSourceCustomerServiceTest() {
-        DataSource dataSource = new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.H2).build();
+	public DataSourceCustomerServiceTest() {
+		DataSource dataSource = new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.H2).build();
+		this.customerService = new DataSourceCustomerService(DataSourceUtils.initializeDdl(dataSource));
+	}
 
-        this.customerService = new DataSourceCustomerService(DataSourceUtils.initializeDdl(dataSource));
-    }
-
-    @Override
-    public CustomerService getCustomerService() {
-        return this.customerService;
-    }
+	@Override
+	public CustomerService getCustomerService() {
+		return this.customerService;
+	}
 
 }
-

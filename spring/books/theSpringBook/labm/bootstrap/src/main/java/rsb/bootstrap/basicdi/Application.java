@@ -7,17 +7,13 @@ import rsb.bootstrap.Demo;
 
 public class Application {
 
-    public static void main(String[] args) {
-        /*
-        datasource initialization is factored out into a Application runnable class
-        It is no longer inside DataSourceCustomerService
-         */
-
-        var datasource = new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.H2).build();
-        var initializedDataSource = DataSourceUtils.initializeDdl(datasource);
-
-        var cs = new DataSourceCustomerService(initializedDataSource);
-        Demo.workWithCustomerService(Application.class, cs);
-    }
+	public static void main(String[] args) {
+		// <1>
+		var dataSource = new EmbeddedDatabaseBuilder().setType(EmbeddedDatabaseType.H2).build();
+		// <2>
+		var initializedDataSource = DataSourceUtils.initializeDdl(dataSource);
+		var cs = new DataSourceCustomerService(initializedDataSource);
+		Demo.workWithCustomerService(Application.class, cs);
+	}
 
 }
