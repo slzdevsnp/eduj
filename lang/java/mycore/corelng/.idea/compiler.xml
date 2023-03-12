@@ -15,6 +15,8 @@
         <module name="Http" />
         <module name="Lombok" />
         <module name="Logging1xx" />
+        <module name="LambdaFunc" />
+        <module name="MiscTopics" />
         <module name="Orika" />
         <module name="restclient-common" />
         <module name="Xml" />

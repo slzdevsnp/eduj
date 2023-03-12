@@ -1,3 +1,6 @@
+#top level book github repo
+https://github.com/Reactive-Spring-Book
+
 # chapters
     : parent  (parent pom, links to springboot v 3.0.x
 ch3 : bootstrap
