@@ -17,12 +17,12 @@ public class HandleTest {
 		StepVerifier//
 				.create(this.handle(5, 4))//
 				.expectNext(0, 1, 2, 3)//
-				.expectError(IllegalArgumentException.class)//
+				.expectError(IllegalArgumentException.class)// happens on el = 4
 				.verify();
 
 		StepVerifier//
 				.create(this.handle(3, 3))//
-				.expectNext(0, 1, 2)//
+				.expectNext(0, 1, 2)//  there is never el =3
 				.verifyComplete();
 	}
 
@@ -36,10 +36,10 @@ public class HandleTest {
 						return;
 					}
 					if (value == numberToError) {
-						sink.error(new IllegalArgumentException("No 4 for you!"));
+						sink.error(new IllegalArgumentException("Throwing error on a numberToError: " + numberToError));
 						return;
 					}
-					sink.complete();
+					sink.complete();  //emit stream completeness signal
 				});
 	}
 

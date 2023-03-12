@@ -16,12 +16,13 @@ public class TakeTest {
 	@Test
 	public void takeUntil() {
 		var count = 50;
-		var take = range().takeUntil(i -> i == (count - 1));
+		var take = range().takeUntil(i -> i == (count - 1)); //takeUntil limits elements by upper boundary
 		StepVerifier.create(take).expectNextCount(count).verifyComplete();
 	}
 
 	private Flux<Integer> range() {
-		return Flux.range(0, 1000);
+		int maxCount = 1_000;
+		return Flux.range(0, maxCount);
 	}
 
 }

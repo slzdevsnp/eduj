@@ -18,7 +18,7 @@ public class SwitchMapTest {
 	}
 
 	private Flux<String> lookup(String word) {
-		return Flux.just(word + " -> reactive").delayElements(Duration.ofMillis(500));
+		return Flux.just(word + " -> reactive").delayElements(Duration.ofMillis(500)); //if delay 100, lookup returns first re  element
 	}
 
 }

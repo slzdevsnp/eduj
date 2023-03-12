@@ -24,7 +24,7 @@ public class DoOnTest {
 		var exceptions = new ArrayList<Throwable>();
 		var finallySignals = new ArrayList<SignalType>();
 
-		Flux<Integer> on = Flux//
+		Flux<Integer> on = Flux
 				.<Integer>create(sink -> {
 					sink.next(1);
 					sink.next(2);
