@@ -1,22 +1,9 @@
 # danvega video
 https://www.youtube.com/watch?v=CXbXoMIVpRg
 
-# list of chatgpt queries
-1. assuming you are  a SpringBoot expert what are the list of steps needed to create a REST API in Spring Boot that talks to a database ?
-2. Create a Spring Boot Entity for a Post type that includes the following properties
- - id
-- title
-- content
-- slug
-- dateCreated
-- dateUpdated    
-
-3. Create a Spring Data Repository that extends JPaRepository for the Post class defined above and include all CRUD operations
-4. Implement the REST API controllers using Spring MVC to handle HTTP requests and return responses
 
 
-
-# output of first top steps query
+# output of query for top level steps
 ```txt
 1. Choose a database: First, you need to choose a database that you want to use for your application. Spring Boot supports various databases, including MySQL, Oracle, PostgreSQL, and MongoDB, to name a few.
 
@@ -31,6 +18,22 @@ https://www.youtube.com/watch?v=CXbXoMIVpRg
 6. Test the REST API: Finally, you need to test the REST API by sending HTTP requests to the endpoints defined in the controller and verifying the responses. You can use tools like Postman or cURL to send HTTP requests and check the responses.
 
 ```
+
+# list of chatgpt queries
+1. assuming you are  a SpringBoot expert what are the list of steps needed to create a REST API in Spring Boot that talks to a database ?
+2. Create a Spring Boot Entity for a Post type that includes the following properties
+ - id
+- title
+- content
+- slug
+- dateCreated
+- dateUpdated    
+
+3. Create a Spring Data Repository that extends JPaRepository for the Post class defined above and include all CRUD operations
+4. Implement the REST API controllers using Spring MVC to handle HTTP requests and return responses
+5. Write a CommandLineRunner bean that will insert a single post using he PostRepository
+
+
 
 
 # steps to build the app
@@ -49,6 +52,8 @@ Entities:
 - dateUpdated  
 
 4. run query 2 which creates **Post** model class and  copy this class in idea in _model_ package
-5. run query to create repository, create a **PostRepostiory** interface  in pkg `repository` but without `@Repository`
-   
+5. run query to create repository, create a **PostRepostiory** interface  in pkg `repository` but without `@Repository`  chatGpt suggested to use *ResponseEntity*  but in video it was not yet suggested, so *ResponseEntity* was not used in  **PostController**. 
+6. run query  to create *CommandLineRunner*. add `@Ben `  CommandLineRunner  to **CommandLineRunner**  and make run the springBoot app.  
+7. go to **PostController**  click on small triangle near @GetMapping  select 'Generate request in HTTP Client'  adapt and save requst in file requests.http  and do the basic testing
 
+8. szi run a query:for a PostController class below   write  a Test to  test  Controller  requests   with first  saving some testing Post objects in the PostRepository.    create a class **PostControllerTest**   add application-test.properties
