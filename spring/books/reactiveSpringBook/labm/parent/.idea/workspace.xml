@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b93a17c2-2402-4738-84e9-11c46008b0a3" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2MO666l1KjRjmB8c6mZxTwmIttl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/zimine/Workspace/glb/metis/libraries/parent",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.16859716",
+    "settings.editor.selected.configurable": "com.obiscr.chatgpt.settings.ChatGPT",
+    "spring.configuration.checksum": "25a0acee3464b730d766c6b79054ab0b",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="rsb.reactor" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.HandleTest">
+    <configuration name="DoOnTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rsb.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rsb.reactor" />
+      <option name="MAIN_CLASS_NAME" value="rsb.reactor.DoOnTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DoOnTest.doOn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rsb.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rsb.reactor" />
+      <option name="MAIN_CLASS_NAME" value="rsb.reactor.DoOnTest" />
+      <option name="METHOD_NAME" value="doOn" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FilterTest.filter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rsb.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rsb.reactor" />
+      <option name="MAIN_CLASS_NAME" value="rsb.reactor.FilterTest" />
+      <option name="METHOD_NAME" value="filter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HandleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rsb.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rsb.reactor" />
+      <option name="MAIN_CLASS_NAME" value="rsb.reactor.HandleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HandleTest.handle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="reactor" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rsb.reactor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="rsb.reactor" />
+      <option name="MAIN_CLASS_NAME" value="rsb.reactor.HandleTest" />
+      <option name="METHOD_NAME" value="handle" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="bootstrap" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="rsb.bootstrap.bootiful.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReactorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="reactor" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="rsb.reactor.ReactorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SynchronicityApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="synchronicity" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="rsb.synchronicity.SynchronicityApp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HandleTest" />
+        <item itemvalue="JUnit.HandleTest.handle" />
+        <item itemvalue="JUnit.DoOnTest.doOn" />
+        <item itemvalue="JUnit.DoOnTest" />
+        <item itemvalue="JUnit.FilterTest.filter" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b93a17c2-2402-4738-84e9-11c46008b0a3" name="Changes" comment="" />
+      <created>1677626104797</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677626104797</updated>
+      <workItem from="1677626105534" duration="420000" />
+      <workItem from="1677626534435" duration="1283000" />
+      <workItem from="1678052249540" duration="258000" />
+      <workItem from="1678052526072" duration="444000" />
+      <workItem from="1678052989890" duration="4940000" />
+      <workItem from="1678534553695" duration="15000" />
+      <workItem from="1678646697070" duration="6747000" />
+      <workItem from="1678657208461" duration="4325000" />
+      <workItem from="1678662448107" duration="115000" />
+      <workItem from="1678743911434" duration="646000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

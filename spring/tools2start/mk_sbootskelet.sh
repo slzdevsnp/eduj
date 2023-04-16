@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function print_help(){
-        echo  usage: $0  --sbversion=3.04 --jersion=17 --deps=webflux,data-jpa --groupid=org.szi --artifactid=mymodule-app --modulename=mymodule --dirname=mymodule-app
+        echo  usage: $0  --sbversion=3.0.4 --jversion=17 --deps=webflux,data-jpa --groupid=org.szi --artifactid=mymodule-app --modulename=mymodule --packagename=dev.szi.xyz --dirname=mymodule-app
 }
 
 
@@ -18,6 +18,7 @@ do
                 --groupid) groupid=${VAL} ;;
                 --artifactid) artifactid=${VAL} ;;
                 --modulename) modulename=${VAL} ;;
+                --packagename) packagename=${VAL} ;;
                 --dirname)  dirname=${VAL} ;;
                 *)              
         esac
@@ -41,6 +42,7 @@ spring init --build=maven \
  --dependencies=${deps} \
  --group-id=${groupid} \
  --artifact-id=${artifactid} \
+ --package-name=${packagename} \
  --name=${modulename} \
  --force \
   ${dirname}

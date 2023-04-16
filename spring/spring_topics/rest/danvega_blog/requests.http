@@ -1,0 +1,9 @@
+
+###
+GET http://localhost:8080/api/posts
+
+
+
+###
+GET http://localhost:8080/api/posts/1
+
