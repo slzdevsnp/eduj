@@ -12,4 +12,10 @@ INSERT INTO sensors
     FROM long_sequence(10000) x;
 
 
-select * from sensors;    
+select count(*) from sensors;
+
+select * from sensors limit 10;
+
+truncate table sensors;
+
+drop table sensors;

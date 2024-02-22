@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   questdb:
-    image: questdb/questdb:7.3.3
+    image: questdb/questdb:7.3.9
     ports:
       - "9000:9000" # Web console
       - "9009:9009" # InfluxDB line protocol
