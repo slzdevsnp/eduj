@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  questdb:
+    image: questdb/questdb:7.3.10
+    ports:
+      - "9000:9000" # Web console
+      - "9009:9009" # InfluxDB line protocol
+      - "8812:8812" # PostgreSQL wire protocol
+      - "9003:9003" # REST API for queries and imports
+    volumes:
+      - ~/Documents/storage/questdb_data:/root/.questdb # local path mounted to container
+      - /tmp/questdb:/var/lib/questdb
+      - /tmp/questdb/my_input_root:/var/lib/questdb/questdb_import
+      
+    deploy:
+      resources:
+        limits:
+          cpus: '2.0'  # Limit to 2 CPU cores
+          memory: 8G   # Limit to 8 GB of RAM
+    environment:
+      - QDB_HTTP_MIN_ENABLED=true # enable/disable HTTP server
+      - QDB_LINE_TCP_MIN_ENABLED=true # enable/disable InfluxDB line protocol
+      - QDB_PG_MIN_ENABLED=true # enable/disable PostgreSQL server
+      - QDB_CAIRO_SQL_COPY_ROOT=/var/lib/questdb/questdb_import
