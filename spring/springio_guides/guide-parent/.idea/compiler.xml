@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -18,6 +19,7 @@
       <module name="gs-consuming-rest" options="-parameters" />
       <module name="gs-payroll" options="-parameters" />
       <module name="gs-rest-service" options="-parameters" />
+      <module name="guide-parent" options="-parameters" />
       <module name="scheduling-tasks" options="-parameters" />
     </option>
   </component>
