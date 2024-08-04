@@ -88,3 +88,6 @@ fabric.properties
 
 #sdkman
 .sdkmanrc
+
+#mac 
+.DS_Store
