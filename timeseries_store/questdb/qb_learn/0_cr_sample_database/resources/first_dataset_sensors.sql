@@ -14,6 +14,7 @@ INSERT INTO sensors
 
 select count(*) from sensors;
 
+
 select * from sensors limit 10;
 
 truncate table sensors;

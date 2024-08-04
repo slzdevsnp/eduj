@@ -10,8 +10,11 @@ https://questdb.io/docs/quick-start/
 - 8812 - Postgres wire protocol
 - 9003 - Min health server
 
+start docker-compose
 
-## inserting fist dataset
+
+
+##  0_
 ## url
 https://questdb.io/docs/guides/create-database/
 
