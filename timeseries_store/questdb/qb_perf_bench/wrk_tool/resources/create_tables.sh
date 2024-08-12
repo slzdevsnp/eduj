@@ -42,3 +42,58 @@ wrk -t10 -c20 -d10s $fqurl
 
 
 
+
+#### mimicking  orderbook
+##1
+q="select * FROM  orderbook  where tso = 'AMP' and timestamp between '2023-01-01T01:00:00' and '2023-01-01T03:00:00';"
+
+enq="select%20%20%2A%20FROM%20%20orderbook%20%20%20where%20tso%20%3D%20%27AMP%27%20and%20timestamp%20between%20%272023-01-01T01%3A00%3A00%27%20and%20%272023-01-01T03%3A00%3A00%27%3B"
+
+## pulls 1.4 M records
+fqurl="http://localhost:9000/exec?query=select%20%20%2A%20FROM%20%20orderbook%20%20%20where%20tso%20%3D%20%27AMP%27%20and%20timestamp%20between%20%272023-01-01T01%3A00%3A00%27%20and%20%272023-01-01T03%3A00%3A00%27%3B&count=true"
+
+curl $fqurl
+
+
+wrk -t10 -c20 -d20s $fqurl
+
+#  10 threads and 20 connections
+#  Thread Stats   Avg      Stdev     Max   +/- Stdev
+#    Latency     0.00us    0.00us   0.00us    -nan%
+#    Req/Sec     0.90      2.19    10.00     95.24%
+#  21 requests in 10.01s, 4.03GB read
+#  Socket errors: connect 0, read 0, write 0, timeout 21
+# Requests/sec:      2.10
+# Transfer/sec:    412.17MB
+
+
+wrk -t10 -c20 -d20s $fqurl
+#Running 1m test @ http://localhost:9000/exec?query=select%20%20%2A%20FROM%20%20orderbook%20%20%20where%20tso%20%3D%20%27AMP%27%20and%20timestamp%20between%20%272023-01-01T01%3A00%3A00%27%20and%20%272023-01-01T03%3A00%3A00%27%3B&count=true
+#  10 threads and 20 connections
+#  Thread Stats   Avg      Stdev     Max   +/- Stdev
+#    Latency     0.00us    0.00us   0.00us    -nan%
+#    Req/Sec     0.70      1.97    10.00     93.14%
+#  206 requests in 1.00m, 24.18GB read
+#  Socket errors: connect 0, read 0, write 0, timeout 206
+#Requests/sec:      3.43
+#Transfer/sec:    412.01MB
+
+##2
+q="select * FROM orderbook where tso = 'AMP' and contract='00H' and timestamp between '2023-01-01T01:00:00' and '2023-01-01T23:59:59.999';"
+
+enq="select%20%2A%20FROM%20orderbook%20where%20tso%20%3D%20%27AMP%27%20and%20contract%3D%2700H%27%20and%20timestamp%20between%20%272023-01-01T01%3A00%3A00%27%20and%20%272023-01-01T23%3A59%3A59.999%27%3B"
+
+fqurl="http://localhost:9000/exec?query=select%20%2A%20FROM%20orderbook%20where%20tso%20%3D%20%27AMP%27%20and%20contract%3D%2700H%27%20and%20timestamp%20between%20%272023-01-01T01%3A00%3A00%27%20and%20%272023-01-01T23%3A59%3A59.999%27%3B"
+
+curl $fqurl
+
+wrk -t10 -c20 -d20s $fqurl
+#Running 20s test @ http://localhost:9000/exec?query=select%20%2A%20FROM%20orderbook%20where%20tso%20%3D%20%27AMP%27%20and%20contract%3D%2700H%27%20and%20timestamp%20between%20%272023-01-01T01%3A00%3A00%27%20and%20%272023-01-01T23%3A59%3A59.999%27%3B
+#  10 threads and 20 connections
+#  Thread Stats   Avg      Stdev     Max   +/- Stdev
+#    Latency     0.00us    0.00us   0.00us    -nan%
+#    Req/Sec     0.65      2.40    10.00     94.12%
+#  34 requests in 20.04s, 2.25GB read
+#  Socket errors: connect 0, read 0, write 0, timeout 34
+#Requests/sec:      1.70
+#Transfer/sec:    114.77MB
